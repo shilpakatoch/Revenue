@@ -9,7 +9,7 @@ This project automates testing for the NSW Government Media Releases page to ver
 3. Verify dynamic testing that allowing any Minister’s name to be used as input.
 
 
-**Technologies used : **
+**Technologies used :**
 
 
 - [Playwright](https://playwright.dev/) – Automation Framework
@@ -18,27 +18,28 @@ This project automates testing for the NSW Government Media Releases page to ver
 
 **Instructions for Setup
 **
-1. Clone the Repository
+**1. Clone the Repository**
 git clone https://github.com/shilpakatoch/Revenue.git
 
-2. Install Dependencies
+**2. Install Dependencies**
 npm init playwright@latest
 
-3. How to Run Tests
-Run all tests:
+**3. How to Run Tests**
+   
 npx playwright test
 
-4. Run a specific test file (optional):
+**4. Run a specific test file (optional):**
 
 npx playwright test tests/filename.spec.ts
 
-5. Dynamic Input for Minister Name
+**5. Dynamic Input for Minister Name**
 Inside the test script (task1.spec.ts), the Minister name is stored in a variable like this:
 
 var ministerName = 'The Minister name';
 To test with other ministers (e.g., "Deputy Premier"), simply change the value of that variable:
 
-6. Run command to see results and report 
+**6. Run command to see results and report** 
+
 npx playwright show-report
 
 ![alt text](image.png)
