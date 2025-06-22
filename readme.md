@@ -16,8 +16,9 @@ This project automates testing for the NSW Government Media Releases page to ver
 - Typescript(Node.js)
 - Playwright Test Runner
 
-**Instructions for Setup
-**
+**Instructions for Setup**
+
+
 **1. Clone the Repository**
 git clone https://github.com/shilpakatoch/Revenue.git
 
