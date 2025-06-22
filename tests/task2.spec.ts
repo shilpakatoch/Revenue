@@ -11,7 +11,7 @@ test('Ministerial Releases: Search, Filter, and Clear All', async ({ ministerial
   expect(results.length).toBeGreaterThan(0);
   for (const text of results) {
     expect(text.toLowerCase()).toContain('chris minns'); // Not case sensitive
-  }
+  };
 
   // Click the "Clear all" button
 

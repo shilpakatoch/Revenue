@@ -1,5 +1,5 @@
 import { Page, Locator } from '@playwright/test';
-
+import { test, expect } from '@playwright/test';
 export class MinisterialReleasesPage {
   readonly page: Page;
   readonly keywordInput: Locator;
@@ -18,6 +18,10 @@ export class MinisterialReleasesPage {
       .locator('.nsw-list-item__copy')
       .locator('p');
     this.clearAllButton = page.locator('[data-test="finder-clear-all"]');
+  }
+
+  async init() {
+    await this.page.waitForTimeout(3000); // Wait for the page to load completely
   }
 
   async goto() {

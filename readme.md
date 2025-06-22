@@ -16,43 +16,29 @@ Technologies used :
 - Typescript(Node.js)
 - Playwright Test Runner
 
+Instructions for Setup
 
- Instructions for Setup
+1. Clone the Repository
+git clone https://github.com/shilpakatoch/Revenue.git
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/nsw-media-tests.git
-cd nsw-media-tests
 2. Install Dependencies
-bash
-Copy
-Edit
-npm install
- How to Run Tests
+npm init playwright@latest
+
+3. How to Run Tests
 Run all tests:
-
-bash
-Copy
-Edit
 npx playwright test
-Run a specific test file (optional):
 
-bash
-Copy
-Edit
-npx playwright test tests/mediaFilter.spec.ts
-🧪 Dynamic Input for Minister Name
-Inside the test script (mediaFilter.spec.ts), the Minister name is stored in a variable like this:
+4. Run a specific test file (optional):
 
-js
-Copy
-Edit
-const minister = "The Premier";
+npx playwright test tests/filename.spec.ts
+
+5. Dynamic Input for Minister Name
+Inside the test script (task1.spec.ts), the Minister name is stored in a variable like this:
+
+var ministerName = 'The Minister name';
 To test with other ministers (e.g., "Deputy Premier"), simply change the value of that variable:
 
-js
-Copy
-Edit
-const minister = "Deputy Premier";
-This allows you to run the same test logic against different filter values without duplicating code.
+6. Run command to see results and report 
+npx playwright show-report
+
+![alt text](image.png)

@@ -4,7 +4,8 @@ import { test , expect} from '../fixtures/fixtures';
 
 
 test('Ministerial Releases: Search and Filter for chris minns', async ({ ministerialReleasesPage }) => {
-  await ministerialReleasesPage.searchFor('chris minns');
+  var ministerName = 'Chris Minns';
+  await ministerialReleasesPage.searchFor(ministerName);
   await ministerialReleasesPage.selectPremier();
   await ministerialReleasesPage.applyFilters();
   await ministerialReleasesPage.waitForResults();
