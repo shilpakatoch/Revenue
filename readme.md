@@ -1,23 +1,23 @@
- NSW Media Releases - Apply filters and reset filters
+ **NSW Media Releases - Apply filters and reset filters**
 
 This project automates testing for the NSW Government Media Releases page to verify that filters applied by Minister name work correctly, and that clearing filters resets the page state.
 
-Purpose
+**Purpose**
 1. Validate that selecting a Minister from the "Ministers" filter list updates the media release cards accordingly
 2. Verify that  clicking on "Clear all filters" resets the UI and media release list to its original state.
 
 3. Verify dynamic testing that allowing any Minister’s name to be used as input.
 
 
-Technologies used : 
+**Technologies used : **
 
 
 - [Playwright](https://playwright.dev/) – Automation Framework
 - Typescript(Node.js)
 - Playwright Test Runner
 
-Instructions for Setup
-
+**Instructions for Setup
+**
 1. Clone the Repository
 git clone https://github.com/shilpakatoch/Revenue.git
 
