@@ -13,7 +13,10 @@ export class MinisterialReleasesPage {
     this.keywordInput = page.getByRole('textbox', { name: 'Keyword' });
     this.premierCheckbox = page.locator('#filter-ministers').getByText('The Premier');
     this.applyFiltersButton = page.locator('[data-test="finder-submit"]');
-    this.results = page.locator('.nsw-search-results .nsw-list-item__copy a');
+    this.results = page
+      .locator('.nsw-search-results')
+      .locator('.nsw-list-item__copy')
+      .locator('p');
     this.clearAllButton = page.locator('[data-test="finder-clear-all"]');
   }
 
